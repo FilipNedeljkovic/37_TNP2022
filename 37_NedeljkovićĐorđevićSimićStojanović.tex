@@ -143,38 +143,39 @@
         Za bolju funkciju hardvera, heophodan je dobro razvijen softver, u ovom slučaju, postoji nekoliko kategorija softvera kada se pravi AR aplikacija: softver
 	direktno u AR aplikaciji, softver za pravljenje AR aplikacije, softver za pravljenje sadržaja AR aplikacije
         
-	Softver direktno u AR aplikaciji - Bitne stvari za stvaranje ovakvih softvera jesu AR biblioteke, u kojima već imaju spremne stvari poput Environmental
-	Acquisition, softver za renderovanje, application engine...Mana bioblioteka jeste korišćenje komponenti iz različitih biblioteka, zatim ograničenost biblioteke
-	prema nekon platformi, stoga mnogi developeri prave svoje zasebne.
+	Softver direktno u AR aplikaciji - Bitne stvari za stvaranje ovakvih softvera jesu AR biblioteke, u kojima već imaju spremne stvari poput stupanja okruženja
+	(eng. /emph{Environmental Acquisition}), softver za renderovanje, application engine...Mana bioblioteka jeste korišćenje komponenti iz različitih biblioteka, zatim
+	ograničenost biblioteke prema nekon platformi, stoga mnogi developeri prave svoje zasebne.
 
-	Environmental Acquisition je softver koji radi kao interface izmežu AR sistema i senzora koji npr. kamera, dobije podatke koje pretvori u sliku tako da ostatak
-	softvera može da nastavi sa daljim radom.
+	Environmental Acquisition je softver koji radi kao interfejs između AR sistema i senzora, tj. podatke koje senzor(npr. kamera) dobije pretvori u sliku tako da
+	ostatak softvera može da nastavi sa daljim radom.
 
-	Sensor Integration radi tako da signale dobijene iz senzora, obrađuje i integriše tako da budu pogodne za ostatak AR aplikacije. Najbolji primer upotreba
-	podataka kamere za praćenje, gde je potrebno da aplikacija zna gde se kamera nalazi u odnosu na drugi marker, uglavnom se kombinuju više senzora kako bi
-	zajedno dobro funkionisali (GPS, kompas,...itd.).
+	Integracija senzora(eng. /emph{Sensor integrarion}) radi tako da signale dobijene iz senzora, obrađuje i integriše tako da budu pogodne za ostatak AR 
+	aplikacije. Najbolji primer upotreba podataka kamere za praćenje, gde je potrebno da aplikacija zna gde se kamera nalazi u odnosu na drugi marker, uglavnom se
+	kombinuje više senzora kako bi zajedno dobro funkionisali (GPS, kompas,...itd.).
 
-	Application engine sakupi obrađene podatke iz senzora i stvara informaciju koja se posle šalje za renderovanje kako bi se napravio signal za displej. U ovom 
-	delu se prave simulacije, "pravila" za taj virtualni/realni svet.
+	Motor aplikacije (eng. /emph{Application engine}) sakupi obrađene podatke iz senzora i stvara informaciju koja se posle šalje za renderovanje kako bi se
+	napravio signal za displej. U ovom delu se prave simulacije, "pravila" za taj virtualni/realni svet.
 
-	Softver za renderovanje konvertuje sakupljene informacije iz AR aplikacije u signal za displej. Postoji softver za renderovanje zvuka, slike, dodire, miris i 
-	ukus (retko) kao i ostali izlazi.
+	Softver za renderovanje konvertuje sakupljene informacije iz AR aplikacije u signal za displej. Postoji softver za renderovanje zvuka, slike, dodire, ređe za
+	miris i ukus, kao i za druge vrste informacija.
 
 	Za developere je bitno koji audio ili video fajl sistem podržava, zbog toga je i biranje biblioteke mnogo komplikovanije za olakšano pravljenje.
 
 	Softver za pravljenje AR aplikacije - Za pravljenje aplikacije, uglavnom se koriste isti alati i resursi, bitna stvar je efikasnost odnosno sa što manje 
-	lagovanja i kašnjenja. S obzirom da se na sličan način pravi, nema tu velike razlike osim odabira biblioteke koja tu ima glavnu ulogu, zbog platforme na kojoj 
-	bi se koristila aplikacija kao jedna od najbitnijih stvari a naravno i prilagođavanje gore navedenim stvarima.
+	kašnjenja. S obzirom da se na sličan način pravi, nema velike razlike osim odabira biblioteke koja tu ima glavnu ulogu, zbog platforme na kojoj bi 
+	se koristila aplikacija kao jedna od najbitnijih stvari a naravno i prilagođavanje gore navedenim stvarima.
 
 	Softver za pravljenje sadržaja AR aplikacije - U softveru sa pravljenje sadržaja AR aplikacija, može se podeliti na pravljenje i editovanje: 3D grafike, 2D 
 	grafike i zvuka.
 
-	Pravljenje 3D grafike je deo 3D modelinga koji se radi u određenim aplikacijama kao stvar za sebe, stoga biranjem biblioteka od pre mora da se uklopi sa export 
-	fajlom nekim od ovih programa. Ovde se odrađuje ceo taj 3D svet ove aplikacije za koji engine stvara pravila.
+	Pravljenje 3D grafike je deo 3D modelinga koji se radi u određenim aplikacijama kao stvar za sebe, stoga izabrana biblioteka mora da se uklopi sa izlaznom 
+	datotekom neke od ovih programa. Ovde se odrađuje ceo 3D svet aplikacije za koji motor stvara pravila.
 
 	Za pravljenje 2D grafike nema veće razlike osim aplikacije pomoću koje se vrši izrada.
 
-	Pravljenje zvuka je takođe sazebna stvar, mogućnost snimanje i editovanje pomoću raznih programa tako je da je moguće implementirati u AR aplikaciji.
+	Pravljenje zvuka je takođe zasebna stvar,potrebno je obezbediti mogućnost snimanja i editovanja pomoću raznih programa tako da je moguće izvršiti 
+	implementaciju  u AR aplikaciji. /cite{Istorija 1}
 
 	\section{Primena u obrazovanju}
 	\label{sec:Primena u obrazovanju}
